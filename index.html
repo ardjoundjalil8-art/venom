@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <a href="#home" class="logo">
+    <img src="https://i.postimg.cc/x8Cy5sfT/2FC34227-AD98-4952-81BA-4AAB42D573B4.jpg" alt="VENOM">
+  </a>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#how">كيف تطلب؟</a>
+    <a href="#order">اطلب الآن</a>
+  </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <p class="small">VENOM COLLECTION</p>
+
+    <h1>
+      ستايلك.<br>
+      <span>قوتك.</span>
+    </h1>
+
+    <p class="hero-text">
+      ملابس شبابية بتصميم عصري وجودة مميزة.
+    </p>
+
+    <a href="#products" class="hero-btn">
+      اكتشف المنتجات
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+  <div class="section-title">
+    <p>OUR COLLECTION</p>
+    <h2>المنتجات</h2>
+  </div>
+
+
+  <div class="product-grid">
+
+
+    <!-- PANTS -->
+
+    <div class="product">
+
+      <div class="product-img">
+        <img
+          src="PUT_PANTS_IMAGE_URL_HERE"
+          alt="سروال VENOM">
+      </div>
+
+      <div class="product-info">
+
+        <span class="tag">متوفر</span>
+
+        <h3>سروال VENOM</h3>
+
+        <p>
+          سروال شبابي مريح بتصميم عصري.
+        </p>
+
+        <div class="colors">
+          <span>الألوان:</span>
+          <b>أسود</b>
+          <b>ڨري</b>
+        </div>
+
+        <div class="sizes">
+          <span>المقاسات:</span>
+          <b>S</b>
+          <b>M</b>
+          <b>L</b>
+          <b>XL</b>
+          <b>XXL</b>
+        </div>
+
+        <div class="bottom">
+
+          <strong>2200 DA</strong>
+
+          <button onclick="selectProduct('سروال VENOM - 2200 DA')">
+            اطلب الآن
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- T-SHIRT -->
+
+    <div class="product">
+
+      <div class="product-img">
+        <img
+          src="PUT_TSHIRT_IMAGE_URL_HERE"
+          alt="T-shirt VENOM">
+      </div>
+
+      <div class="product-info">
+
+        <span class="tag">متوفر</span>
+
+        <h3>T-shirt VENOM</h3>
+
+        <p>
+          T-shirt شبابي بتصميم بسيط وأنيق.
+        </p>
+
+        <div class="colors">
+          <span>الألوان:</span>
+          <b>أبيض</b>
+          <b>أسود</b>
+        </div>
+
+        <div class="sizes">
+          <span>المقاسات:</span>
+          <b>S</b>
+          <b>M</b>
+          <b>L</b>
+          <b>XL</b>
+          <b>XXL</b>
+        </div>
+
+        <div class="bottom">
+
+          <strong>2200 DA</strong>
+
+          <button onclick="selectProduct('T-shirt VENOM - 2200 DA')">
+            اطلب الآن
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ENSEMBLE -->
+
+    <div class="product">
+
+      <!-- CAROUSEL -->
+
+      <div class="product-carousel">
+
+        <img
+          class="ensemble-slide active"
+          src="https://i.postimg.cc/JzPZhfj2/3DA2EF6B-4A2C-42F5-BB68-6160D43235C9.jpg"
+          alt="Ensemble VENOM 1">
+
+        <img
+          class="ensemble-slide"
+          src="https://i.postimg.cc/SKR8YgrQ/4420730A-DE3A-473D-9FF1-CBB29CACA859.jpg"
+          alt="Ensemble VENOM 2">
+
+        <img
+          class="ensemble-slide"
+          src="https://i.postimg.cc/Jh0JHpq1/6040F15D-8F26-4DAC-8D89-042A8F3232E7.jpg"
+          alt="Ensemble VENOM 3">
+
+        <img
+          class="ensemble-slide"
+          src="https://i.postimg.cc/DwBLz9q2/69E9BC67-90B0-4426-AE88-8DDDA4CE89CA.jpg"
+          alt="Ensemble VENOM 4">
+
+        <img
+          class="ensemble-slide"
+          src="https://i.postimg.cc/CxmkK3jh/EF5D75A4-5FA7-486C-8BE5-B825FCF12132.jpg"
+          alt="Ensemble VENOM 5">
+
+
+        <!-- LEFT -->
+
+        <button
+          class="carousel-btn prev"
+          onclick="changeEnsembleImage(-1)">
+          ‹
+        </button>
+
+
+        <!-- RIGHT -->
+
+        <button
+          class="carousel-btn next"
+          onclick="changeEnsembleImage(1)">
+          ›
+        </button>
+
+
+        <!-- NUMBER -->
+
+        <div class="image-counter">
+          <span id="currentImage">1</span> / 5
+        </div>
+
+      </div>
+
+
+      <div class="product-info">
+
+        <span class="tag">متوفر</span>
+
+        <h3>Ensemble VENOM</h3>
+
+        <p>
+          طقم كامل بتصميم شبابي مميز.
+        </p>
+
+        <div class="colors">
+          <span>الألوان:</span>
+          <b>أسود</b>
+          <b>أبيض</b>
+          <b>ڨري</b>
+        </div>
+
+        <div class="sizes">
+          <span>المقاسات:</span>
+          <b>S</b>
+          <b>M</b>
+          <b>L</b>
+          <b>XL</b>
+          <b>XXL</b>
+        </div>
+
+        <div class="bottom">
+
+          <strong>3500 DA</strong>
+
+          <button onclick="selectProduct('Ensemble VENOM - 3500 DA')">
+            اطلب الآن
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HOW TO ORDER -->
+
+<section class="how" id="how">
+
+  <div class="section-title">
+
+    <p>HOW TO ORDER</p>
+
+    <h2>كيف تطلب؟</h2>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+      <span>01</span>
+      <h3>اختر المنتج</h3>
+      <p>اختر القطعة التي تريدها من المنتجات.</p>
+    </div>
+
+    <div class="step">
+      <span>02</span>
+      <h3>اختر اللون والمقاس</h3>
+      <p>اختر اللون والمقاس المناسب لك.</p>
+    </div>
+
+    <div class="step">
+      <span>03</span>
+      <h3>أدخل معلوماتك</h3>
+      <p>الاسم، رقم الهاتف، الولاية والبلدية.</p>
+    </div>
+
+    <div class="step">
+      <span>04</span>
+      <h3>أكد الطلب</h3>
+      <p>اضغط على تأكيد الطلب ثم أرسله عبر واتساب.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+  <div class="order-box">
+
+    <p>VENOM ORDER</p>
+
+    <h2>تأكيد الطلب</h2>
+
+
+    <form id="orderForm">
+
+      <label>المنتج</label>
+
+      <input
+        id="product"
+        type="text"
+        placeholder="اختر المنتج من الأعلى"
+        readonly
+        required>
+
+
+      <label>الاسم الكامل</label>
+
+      <input
+        id="name"
+        type="text"
+        placeholder="اكتب اسمك الكامل"
+        required>
+
+
+      <label>رقم الهاتف</label>
+
+      <input
+        id="phone"
+        type="tel"
+        placeholder="0550000000"
+        required>
+
+
+      <label>الولاية</label>
+
+      <select id="wilaya" required>
+
+        <option value="">اختر الولاية</option>
+
+        <option>Adrar</option>
+        <option>Chlef</option>
+        <option>Laghouat</option>
+        <option>Oum El Bouaghi</option>
+        <option>Batna</option>
+        <option>Béjaïa</option>
+        <option>Biskra</option>
+        <option>Béchar</option>
+        <option>Blida</option>
+        <option>Bouira</option>
+        <option>Tamanrasset</option>
+        <option>Tébessa</option>
+        <option>Tlemcen</option>
+        <option>Tiaret</option>
+        <option>Tizi Ouzou</option>
+        <option>Alger</option>
+        <option>Djelfa</option>
+        <option>Jijel</option>
+        <option>Sétif</option>
+        <option>Saïda</option>
+        <option>Skikda</option>
+        <option>Sidi Bel Abbès</option>
+        <option>Annaba</option>
+        <option>Guelma</option>
+        <option>Constantine</option>
+        <option>Médéa</option>
+        <option>Mascara</option>
+        <option>Ouargla</option>
+        <option>Oran</option>
+        <option>Tipaza</option>
+        <option>Mostaganem</option>
+
+      </select>
+
+
+      <label>البلدية</label>
+
+      <input
+        id="commune"
+        type="text"
+        placeholder="اكتب البلدية"
+        required>
+
+
+      <label>المقاس</label>
+
+      <select id="size" required>
+
+        <option value="">اختر المقاس</option>
+
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+
+      </select>
+
+
+      <label>اللون</label>
+
+      <select id="color" required>
+
+        <option value="">
+          اختر المنتج أولاً
+        </option>
+
+      </select>
+
+
+      <button
+        type="submit"
+        class="submit-btn">
+
+        تأكيد الطلب
+
+      </button>
+
+    </form>
+
+
+    <div id="success" class="success">
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+      <h3>
+        تم تجهيز طلبك
+      </h3>
+
+      <p>
+        معلوماتك جاهزة. اضغط على الزر لإرسال الطلب إلى VENOM.
+      </p>
+
+      <button
+        id="whatsappBtn"
+        class="whatsapp-btn">
+
+        إرسال الطلب عبر واتساب
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-logo">
+    VENOM
+  </div>
+
+  <p>
+    © 2026 VENOM — جميع الحقوق محفوظة
+  </p>
+
+  <a
+    href="https://www.instagram.com/venom_09__/"
+    target="_blank">
+
+    Instagram @venom_09__
+
+  </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
